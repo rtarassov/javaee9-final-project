@@ -1,1 +1,11 @@
 social network
+- register
+- profile
+- welcome page
+- search box
+- chat
+- add a friend
+- news feed
+- marketplace
+- group
+- notification
