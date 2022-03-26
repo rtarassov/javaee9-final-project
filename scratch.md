@@ -1,7 +1,13 @@
 ### Social network
 - welcome page
-    - news feed
-    - information about login
+  - news feed - without logging in
+  - business perspective
+    - news from last 24 hours
+    - news
+      - text
+      - picture
+      - post author
+      - timestamp
 - profile
     - user name, location, picture (about yourself) - editing
     - posting news
