@@ -39,6 +39,6 @@ public class PostService {
         return postRepository.queryAllRecentPosts(boundary)
                 .stream()
                 .map(postConverter::fromEntityToDto)
-                .collect(Collectors.toList());
+                .toList();
     }
 }
