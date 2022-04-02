@@ -36,6 +36,13 @@ public class PostController {
         // Convert Post int o PostDTO
         // return to user
 
-        return null;
+        return new PostDto(
+                1L,
+                "My post",
+                "My content",
+                "Just me",
+                "1998",
+                "1988"
+        );
     }
 }
