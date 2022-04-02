@@ -3,10 +3,7 @@ package com.javaee9.javaee9finalproject.controller;
 import com.javaee9.javaee9finalproject.dto.PostDto;
 import com.javaee9.javaee9finalproject.service.PostService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -44,5 +41,11 @@ public class PostController {
                 "1998",
                 "1988"
         );
+    }
+
+    @PostMapping()
+    public PostDto createNewPost(PostDto postDto) {
+        log.info("Trying to store new post: [{}]", postDto);
+        return postService.createNewPost(postDto);
     }
 }

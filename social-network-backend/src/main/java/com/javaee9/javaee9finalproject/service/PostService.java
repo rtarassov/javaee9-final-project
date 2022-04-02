@@ -41,4 +41,14 @@ public class PostService {
                 .map(postConverter::fromEntityToDto)
                 .toList();
     }
+
+    public PostDto createNewPost(PostDto postDto) {
+        log.info("Creating new post: [{}]", postDto);
+        var entityToStore = postConverter.fromDtoToEntity(postDto);
+        var storedEntity = postRepository.save(entityToStore);
+        var result = postConverter.fromEntityToDto(storedEntity);
+        log.info("Created Post: [{}]", result);
+
+        return result;
+    }
 }
