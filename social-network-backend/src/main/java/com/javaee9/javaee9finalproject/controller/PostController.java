@@ -4,6 +4,7 @@ import com.javaee9.javaee9finalproject.dto.PostDto;
 import com.javaee9.javaee9finalproject.service.PostService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -26,5 +27,15 @@ public class PostController {
         log.info("reading recent posts");
 
         return postService.readRecentPosts();
+    }
+
+    @GetMapping("/recent/{id}")
+    public PostDto readRecentPostById(@PathVariable("id") Long postId) {
+        // TODO: finish implementation
+        // Read Post by id from database
+        // Convert Post int o PostDTO
+        // return to user
+
+        return null;
     }
 }
