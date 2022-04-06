@@ -44,7 +44,7 @@ public class PostController {
     }
 
     @PostMapping()
-    public PostDto createNewPost(PostDto postDto) {
+    public PostDto createNewPost(@RequestBody PostDto postDto) {
         log.info("Trying to store new post: [{}]", postDto);
         return postService.createNewPost(postDto);
     }
