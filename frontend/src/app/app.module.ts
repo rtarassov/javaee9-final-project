@@ -6,12 +6,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { NewsFeedComponent } from './components/news-feed/news-feed.component';
 
 @NgModule({
   declarations: [
-    WelcomeComponent,
-    NewsFeedComponent
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
