@@ -1,0 +1,9 @@
+.example-card {
+  max-width: 400px;
+}
+
+/* User Icon */
+.example-header-image {
+  background-image: url("https://phantom-marca.unidadeditorial.es/293daf6b00bbd2041475d587981f1af6/resize/1200/f/jpg/assets/multimedia/imagenes/2022/04/01/16488355685861.jpg");
+  background-size: cover;
+}
