@@ -43,6 +43,7 @@ public class PostController {
         );
     }
 
+    // TODO: validation in DTOs
     @PostMapping()
     public PostDto createNewPost(@RequestBody PostDto postDto) {
         log.info("Trying to store new post: [{}]", postDto);
