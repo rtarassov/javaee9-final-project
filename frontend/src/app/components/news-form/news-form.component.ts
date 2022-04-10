@@ -9,13 +9,13 @@ import {FormBuilder, Validators} from "@angular/forms";
 export class NewsFormComponent {
 
   postForm = this.formBuilder.group({
-    header: ['', Validators.required],
-    content: ['', Validators.required],
-    author: ['', Validators.required]
+    header: ['', [Validators.required, Validators.minLength(3)]],
+    content: ['', [Validators.required, Validators.minLength(3)]],
+    author: ['', [Validators.required, Validators.minLength(3)]]
   });
   constructor(private formBuilder: FormBuilder) { }
 
-  createPost() {
-    console.log("Trying to create post...")
+  onFormSubmit() {
+    console.log("Submitting whole form")
   }
 }
